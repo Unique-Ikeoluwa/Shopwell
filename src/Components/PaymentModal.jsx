@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { RiVisaLine } from "react-icons/ri";
 import { FaStripe } from "react-icons/fa";
 import { FaCcMastercard } from "react-icons/fa";

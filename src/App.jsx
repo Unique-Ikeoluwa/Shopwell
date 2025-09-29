@@ -3,16 +3,15 @@ import CartView from "./Pages/CartView"
 import ShoppingCart from "./Pages/ShoppingCart"
 import Home from "./Pages/Home"
 import PageLayout from "./Components/Layout/PageLayout"
-import PaymentModal from "./Components/PaymentModal"
 
 function App() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="bg-[#dfe8e7] min-h-screen font-raleway">
       <Routes>
         <Route element={<PageLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="shoppingcart" element={<ShoppingCart />} />
-          <Route path="cartview" element={<CartView />} />
+          <Route path="cartview/:id" element={<CartView />} />
         </Route>
       </Routes>
     </div>
